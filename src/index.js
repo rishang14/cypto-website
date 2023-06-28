@@ -13,8 +13,8 @@ root.render(
     <ColorModeScript />  
     <BrowserRouter>
     <ChakraProvider  theme={theme}> 
-      <ColorModeSwitcher/>
       <App />
+      <ColorModeSwitcher/>
     </ChakraProvider>
     </BrowserRouter>
    

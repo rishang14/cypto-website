@@ -46,7 +46,7 @@ const Coins = () => {
     fetchCoins();
   }, [currnecy, page]);
   if (error) {
-    return <HandlingError msg={'Error while fetching Exchanges'} />;
+    return <HandlingError msg={'Error while fetching Coins'} />;
   }
   return (
     <Container maxW={'container.xl'}>
@@ -61,7 +61,7 @@ const Coins = () => {
               <Radio value={'usd'}>$ USD</Radio>
             </HStack>
           </RadioGroup>
-          <HStack wrap={'wrap'}>
+          <HStack wrap={'wrap'} justifyContent={"space-evenly"}>
             {coins.map((coin) => {
               return (
                 <CoinCard
